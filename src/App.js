@@ -1,23 +1,14 @@
-import React, {Component} from 'react';
-import {Layout} from 'antd';
-import './assets/style/index.less';
-import SiderCustom from './components/SiderCustom';
-import HeaderCustom from './components/HeaderCustom';
-
-const {Content} = Layout;
+import React, { Component } from 'react';
+import './App.less';
 
 class App extends Component {
-    render() {
-        return (
-            <Layout>
-                <SiderCustom/>
-                <Layout style={{flexDirection: 'column'}}>
-                    <HeaderCustom/>
-                    <Content>Content</Content>
-                </Layout>
-            </Layout>
-        );
-    }
+  render() {
+    return (
+      <div>
+          {this.props.children}
+      </div>
+    );
+  }
 }
 
 export default App;

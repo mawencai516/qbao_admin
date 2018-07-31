@@ -1,10 +1,11 @@
 {
-  "name": "qbao_admin",
+  "name": "react-admin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^3.6.1",
+    "antd": "^3.7.0",
     "autoprefixer": "7.1.6",
+    "axios": "^0.18.0",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
@@ -16,6 +17,8 @@
     "css-loader": "0.28.7",
     "dotenv": "4.0.0",
     "dotenv-expand": "4.2.0",
+    "echarts": "^4.1.0",
+    "echarts-for-react": "^2.0.13",
     "eslint": "4.10.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "1.9.0",
@@ -28,14 +31,16 @@
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "less": "^2.7.3",
+    "less-loader": "^4.1.0",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
     "raf": "3.4.0",
-    "react": "^16.4.0",
+    "react": "^16.4.1",
     "react-dev-utils": "^5.0.1",
-    "react-dom": "^16.4.0",
+    "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "resolve": "1.6.0",
     "style-loader": "0.19.0",
@@ -50,10 +55,6 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
-  },
-  "devDependencies": {
-    "less": "^3.0.4",
-    "less-loader": "^4.1.0"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -96,5 +97,8 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.8.0"
   }
 }
